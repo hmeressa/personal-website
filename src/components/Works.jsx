@@ -80,17 +80,17 @@ export const ProjectCard = ({
               </p>
             ))}
           </div>
-          {projectLink != null && projectLink?.length >=1 && 
-           <motion.div
-            whileTap={{ scale: 0.9 }}
-            animate={controls}
-            onClick={() => window.open(projectLink, "_blank")}
-            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-          >
-            <div className="w-0 h-0 border-t-[10px] border-t-transparent border-l-[15px] border-l-sky-800 border-b-[10px] border-b-transparent"></div>
-          </motion.div>
+          {projectLink != null && projectLink?.length >= 1 &&
+            <motion.div
+              whileTap={{ scale: 0.9 }}
+              animate={controls}
+              onClick={() => window.open(projectLink, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <div className="w-0 h-0 border-t-[10px] border-t-transparent border-l-[15px] border-l-sky-800 border-b-[10px] border-b-transparent"></div>
+            </motion.div>
           }
-         
+
         </div>
       </Tilt>
     </motion.div>
@@ -114,7 +114,7 @@ export const ProjectCardDashboard = ({
   const controls = useAnimation();
   const bounceAnimation = {
     z: [0, -20, 0, 20, 0],
-    scale: [1, 0.8, 1, 1.2, 1], 
+    scale: [1, 0.8, 1, 1.2, 1],
     transition: {
       duration: 0.8,
       repeat: Infinity,
@@ -177,7 +177,7 @@ export const ProjectCardDashboard = ({
                 onConfirm={() => handleDelete(_id)}
                 okText="Yes"
                 okButtonProps={{
-                  className:"bg-blue-500"
+                  className: "bg-blue-500"
                 }}
                 cancelText="No"
               >
@@ -186,8 +186,8 @@ export const ProjectCardDashboard = ({
             </div>
           </div>
         </div>
-        
-        
+
+
         <div className="mt-5">
           <Link
             to={`/projectdetail/${_id}`}

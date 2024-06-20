@@ -1,4 +1,7 @@
-import endebete from "../assets/company/1.png";
+import endebete from "../assets/company/endebete.png";
+import ICL from "../assets/company/ICL.jpeg";
+import IE from "../assets/company/IE.png";
+
 import endebetecomp from "../assets/tech/endebete.png";
 import dashboard from "../assets/tech/dashboard.png";
 import agency from "../assets/tech/agencyy.png";
@@ -14,6 +17,7 @@ import {
   mobile,
   backend,
   web,
+  aws,
   javascript,
   typescript,
   css,
@@ -55,7 +59,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Backend Developer",
+    icon: backend,
+  },
+  {
+    title: "Frontend Developer",
     icon: web,
   },
   {
@@ -63,22 +71,18 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "UI/UX",
-    icon: backend,
+    title: "AWS",
+    icon: aws,
   },
 ];
 
 const skillsFrontend = [
   {
-    title: "React.js | Redux , Redux Thunk",
+    title: "React",
     level: 95,
   },
   {
-    title: "Next.js",
+    title: "Next",
     level: 80,
   },
   {
@@ -86,11 +90,15 @@ const skillsFrontend = [
     level: 70,
   },
   {
-    title: "Three.js / React Three Fiber",
+    title: "Vue",
+    level: 70,
+  },
+  {
+    title: "Three.js",
     level: 40,
   },
   {
-    title: "Tailwind , CSS",
+    title: "Tailwind",
     level: 90,
   },
   {
@@ -98,34 +106,42 @@ const skillsFrontend = [
     level: 80,
   },
   {
-    title: "Figma",
+    title: "Antd",
     level: 70,
   },
 ];
 const skillsBackend = [
   {
-    title: "Express.js",
+    title: "Java",
     level: 90,
   },
   {
-    title: "Next.js",
-    level: 70,
-  },
-  {
-    title: "TypeORM",
-    level: 95,
-  },
-  {
-    title: "Prisma",
-    level: 95,
-  },
-  {
-    title: "Postgresql",
+    title: "SpringBoot",
     level: 80,
   },
   {
-    title: "Mongodb",
+    title: "Node",
+    level: 70,
+  },
+  {
+    title: "Express",
+    level: 95,
+  },
+  {
+    title: "Nest",
+    level: 95,
+  },
+  {
+    title: "Laravel",
     level: 75,
+  },
+  {
+    title: "Symfony",
+    level: 80,
+  },
+  {
+    title: "Yii2",
+    level: 80,
   },
 ];
 const skillsDevops = [
@@ -138,9 +154,50 @@ const skillsDevops = [
     level: 70,
   },
   {
-    title: "Jenkinks",
+    title: "CI/CD",
     level: 95,
   },
+  {
+    title: "Kibernetus",
+    level: 95,
+  },
+  {
+    title: "Github Action",
+    level: 95,
+  },
+  {
+    title: "Travis",
+    level: 95,
+  },
+
+];
+
+const skillsDevopss = [
+  {
+    title: "Docker",
+    level: 90,
+  },
+  {
+    title: "Nginx",
+    level: 70,
+  },
+  {
+    title: "CI/CD",
+    level: 95,
+  },
+  {
+    title: "Kibernetus",
+    level: 95,
+  },
+  {
+    title: "Github Action",
+    level: 95,
+  },
+  {
+    title: "Travis",
+    level: 95,
+  },
+
 ];
 
 const technologies = [
@@ -200,41 +257,55 @@ const technologies = [
 ];
 const experiences = [
   {
-    title: "Upwork Freelance",
-    company_name: "Stocky | Upwork Freelance",
-    icon: stocky,
+    title: "Full Stack Web Developer",
+    company_name: "IE Network Solutions | Ethiopia.",
+    icon: IE,
     iconBg: "#383E56",
-    date: `10 2023 -  ${moment("10-10-2023").format("MM-YYYY")}`,
-    points: [
-      "Creating a Company Landing Page and dashboard to validate , analysis the cusotmers interaction using React , express.js , JavaScript library and the Tailwind CSS framework involves utilizing these tools to develop user-friendly, visually appealing, and highly functional applications",
-      "Collaborating with the CEO of Stocky , to create high-quality products.",
-    ],
+    date: `April 2023 -  ${moment(Date.now()).format("MM-YYYY")}`,
+    position: "Backend Web Developer",
+    technology: "Node | Express | Nest | MySQL | PostgreSQL | Nginx | Docker | CI/CD | Jenkins ",
+    address: "Haya Hulet | Festival | Addis Abeba, Ethiopia",
+    overview: (
+      <div className="mt-5 list-disc ml-5 space-y-2 text-justify">
+        <p><strong>Developing SaaS Products:</strong> Creating scalable and highly functional software as a service (SaaS) applications.</p>
+        <p><strong>Cross-functional Collaboration:</strong> Working closely with designers, product managers, and other developers to deliver high-quality products.</p>
+        <p><strong>Code Reviews:</strong> Participating in code reviews and providing constructive feedback to enhance code quality.</p>
+      </div>
+    )
   },
   {
-    title: "Full-stack Developer",
-    company_name: "IE Network Solutions",
-    icon: "https://scm.ienetworks.co/static/media/White.c831409c3eec4e852dfb.png",
+    title: "Backend Web Developer",
+    company_name: "International Clinical Labratory | Ethiopia.",
+    icon: ICL,
     iconBg: "#383E56",
-    date: `02 2023 -  ${moment(Date.now()).format("MM-YYYY")}`,
-    points: [
-      "Creating software as a service (SaaS) products using the React , express.js , JavaScript library and the Tailwind CSS framework involves utilizing these tools to develop user-friendly, visually appealing, and highly functional applications",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    date: `Februray 2023 -  December 2023`,
+    position: "Full Stack Web Developer",
+    technology: "Java | Spring Boot | Laravel | React | MySQL | JDBC | Docker | Jenkins | CI/CD",
+    address: "Bulgaria | Addis Abeba, Ethiopia ",
+    overview: (
+      <div className="mt-5 list-disc ml-5 space-y-2 text-justify">
+        <p><strong>Developing SaaS Products:</strong> Creating scalable and highly functional software as a service (SaaS) applications.</p>
+        <p><strong>Cross-functional Collaboration:</strong> Working closely with designers, product managers, and other developers to deliver high-quality products.</p>
+        <p><strong>Code Reviews:</strong> Participating in code reviews and providing constructive feedback to enhance code quality.</p>
+      </div>
+    )
   },
   {
-    title: "Flutter Mobile Developer",
-    company_name: "Endebete",
+    title: "Full Stack Web Developer",
+    company_name: "Kerod Apps | Ethiopia",
     icon: endebete,
     iconBg: "#E6DEDD",
-    date: "Jan 2022 - May 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    date: "Augest 2022 - Junuary 2023",
+    position: "Full Stack Web Developer",
+    technology: "Java | Spring Boot | Laravel | React | MySQL | JDBC | Docker | Jenkins | CI/CD",
+    address: "Kerod Apps | Addis Abeba, Ethiopia",
+    overview: (
+      <div className="mt-5 list-disc ml-5 space-y-2 text-justify">
+        <p><strong>Developing SaaS Products:</strong> Creating scalable and highly functional software as a service (SaaS) applications.</p>
+        <p><strong>Cross-functional Collaboration:</strong> Working closely with designers, product managers, and other developers to deliver high-quality products.</p>
+        <p><strong>Code Reviews:</strong> Participating in code reviews and providing constructive feedback to enhance code quality.</p>
+      </div>
+    )
   },
 ];
 
@@ -285,8 +356,8 @@ const projects = [
       },
     ],
     image: stockydashboard,
-    link: "https://dashboard-nk3k.onrender.com",
-    source_code_link: "https://github.com/nand-n/Dashboard_1.0",
+    link: "https://personal-website-dy03.onrender.com",
+    source_code_link: "https://github.com/hmeressa",
   },
   {
     name: "Service Desc ",
@@ -307,8 +378,8 @@ const projects = [
       },
     ],
     image: sd,
-    link: "https://dashboard-nk3k.onrender.com",
-    source_code_link: "https://github.com/nand-n/Dashboard_1.0",
+    link: "https://personal-website-dy03.onrender.com",
+    source_code_link: "https://github.com/hmeressa",
   },
   {
     name: "Project Management tool ",
@@ -329,8 +400,8 @@ const projects = [
       },
     ],
     image: pm,
-    link: "https://dashboard-nk3k.onrender.com",
-    source_code_link: "https://github.com/nand-n/Dashboard_1.0",
+    link: "https://personal-website-dy03.onrender.com",
+    source_code_link: "https://github.com/hmeressa",
   },
   {
     name: "Rigid Dashboard",
@@ -351,8 +422,8 @@ const projects = [
       },
     ],
     image: dashboard,
-    link: "https://dashboard-nk3k.onrender.com",
-    source_code_link: "https://github.com/nand-n/Dashboard_1.0",
+    link: "https://personal-website-dy03.onrender.com",
+    source_code_link: "https://github.com/hmeressa",
   },
   {
     name: "Dolche Pay",
@@ -373,8 +444,8 @@ const projects = [
       },
     ],
     image: dolchepay,
-    link: "https://agency-landing-page.onrender.com/",
-    source_code_link: "https://github.com/",
+    link: "https://personal-website-dy03.onrender.com",
+    source_code_link: "https://github.com/hmeressa",
   },
   {
     name: "Dolche SaaS",
@@ -395,8 +466,8 @@ const projects = [
       },
     ],
     image: agency,
-    link: "https://agency-landing-page.onrender.com/",
-    source_code_link: "https://github.com/",
+    link: "https://personal-website-dy03.onrender.com",
+    source_code_link: "https://github.com/hmeressa",
   },
   {
     name: "Bigo game",
@@ -417,8 +488,8 @@ const projects = [
       },
     ],
     image: bigo,
-    link: "https://agency-landing-page.onrender.com/",
-    source_code_link: "https://github.com/nand-n/Agency-website.git",
+    link: "https://personal-website-dy03.onrender.com",
+    source_code_link: "https://github.com/hmeressa",
   },
   {
     name: "Modern web 3",
@@ -439,8 +510,8 @@ const projects = [
       },
     ],
     image: modernweb,
-    link: "https://modern-web.onrender.com/",
-    source_code_link: "https://github.com/",
+    link: "https://personal-website-dy03.onrender.com",
+    source_code_link: "https://github.com/hmeressa",
   },
   {
     name: "Agency Landing page",
@@ -461,8 +532,8 @@ const projects = [
       },
     ],
     image: agency,
-    link: "https://agency-landing-page.onrender.com/",
-    source_code_link: "https://github.com/nand-n/Agency-website.git",
+    link: "https://personal-website-dy03.onrender.com",
+    source_code_link: "https://github.com/hmeressa",
   },
   {
     name: "Endebete",
@@ -483,8 +554,8 @@ const projects = [
       },
     ],
     image: endebetecomp,
-    link: "https://endebete.com/",
-    source_code_link: "https://github.com/nand-n/endebete",
+    link: "https://personal-website-dy03.onrender.com",
+    source_code_link: "https://github.com/hmeressa",
   },
   {
     name: "Agri-Connect",
@@ -505,8 +576,8 @@ const projects = [
       },
     ],
     image: agriconnect,
-    link: "https://adis-gebrena.onrender.com/",
-    source_code_link: "https://github.com/nand-n/adis-gibrena",
+    link: "https://personal-website-dy03.onrender.com",
+    source_code_link: "https://github.com/hmeressa",
   },
 ];
 

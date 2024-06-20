@@ -76,13 +76,13 @@ const Skills = () => {
 
       <div className="flex flex-col md:flex-row md:grid md:grid-cols-3 md:justify-evenly md:items-start gap-4 md:gap-8 mt-8">
         <Skill
-          title={"Frontend Skills"}
-          data={skillsFrontend}
+          title={"Backend Skills"}
+          data={skillsBackend}
           style={"md:col-span-1 md:col-start-1"}
         />
         <Skill
-          title={"Backend Skills"}
-          data={skillsBackend}
+          title={"Frontend Skills"}
+          data={skillsFrontend}
           style={"md:col-span-1 md:col-start-2"}
         />
         <Skill
