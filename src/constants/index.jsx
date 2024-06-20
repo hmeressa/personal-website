@@ -274,7 +274,7 @@ const experiences = [
     )
   },
   {
-    title: "Backend Web Developer",
+    title: "Full Stack Web Developer",
     company_name: "International Clinical Labratory | Ethiopia.",
     icon: ICL,
     iconBg: "#383E56",
@@ -296,7 +296,7 @@ const experiences = [
     icon: endebete,
     iconBg: "#E6DEDD",
     date: "Augest 2022 - Junuary 2023",
-    position: "Full Stack Web Developer",
+    position: "Backend Web Developer",
     technology: "Java | Spring Boot | Laravel | React | MySQL | JDBC | Docker | Jenkins | CI/CD",
     address: "Kerod Apps | Addis Abeba, Ethiopia",
     overview: (
