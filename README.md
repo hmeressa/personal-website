@@ -33,15 +33,15 @@
   </a>
 </p>
    
- <h4>
+ <!-- <h4>
     <a href="https://nahom.onrender.com.app/">View Demo</a>
   <span> · </span>
-    <a href="https://github.com/nand-n/Threejs_3D_Portfolio">Documentation</a>
+    <a href="https://github.com/hmeressa/Threejs_3D_Portfolio">Documentation</a>
   <span> · </span>
     <a href="https://github.com/ladunjexa/Threejs_3D_Portfolio/issues/">Report Bug</a>
   <span> · </span>
     <a href="https://github.com/ladunjexa/Threejs_3D_Portfolio/issues/">Request Feature</a>
-  </h4>
+  </h4> -->
 </div>
 
 <br />

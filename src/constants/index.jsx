@@ -5,7 +5,16 @@ import IE from "../assets/company/IE.png";
 import endebetecomp from "../assets/tech/endebete.png";
 import dashboard from "../assets/tech/dashboard.png";
 import agency from "../assets/tech/agencyy.png";
-import flutter from "../assets/tech/flutter.jpg";
+
+import java from "../assets/tech/java.png";
+import jenkins from "../assets/tech/jenkins.png";
+import springboot from "../assets/tech/springboot.jpeg";
+import nest from "../assets/tech/nest.png";
+import express from "../assets/tech/express.png";
+import symfony from "../assets/tech/symfony.png";
+import yii2 from "../assets/tech/yii2.jpeg";
+// import aws from "../assets/tech/aws.jpeg";
+
 import stockydashboard from "../assets//tech/stockydashboard.png";
 import agriconnect from "../assets/tech/agriconnect.png";
 import sd from "../assets/tech/sd.png";
@@ -19,18 +28,11 @@ import {
   web,
   aws,
   javascript,
-  typescript,
-  css,
   reactjs,
-  redux,
-  tailwind,
   nodejs,
   git,
-  figma,
   docker,
-  threejs,
   postgresql,
-  stocky,
 } from "../assets";
 import moment from "moment";
 
@@ -202,33 +204,40 @@ const skillsDevopss = [
 
 const technologies = [
   {
-    name: "Flutter",
-    icon: flutter,
+    name: "Java",
+    icon: java,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "Springboot",
+    icon: springboot,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "Nest",
+    icon: nest,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "Express",
+    icon: express,
+  },
+  {
+    name: "AWS",
+    icon: aws,
+  },
+  {
+    name: "Symfony",
+    icon: symfony,
+  },
+  {
+    name: "Jenkins",
+    icon: jenkins,
+  },
+  {
+    name: "YII2",
+    icon: yii2,
   },
   {
     name: "React JS",
     icon: reactjs,
-  },
-
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Node JS",
@@ -239,16 +248,8 @@ const technologies = [
     icon: postgresql,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
   {
     name: "docker",
