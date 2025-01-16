@@ -110,8 +110,7 @@ function DashboardProjects({ projects, fetchProjects, createProject, deleteProje
 
 const mapStateToProps = (state) => {
   return {
-    projects: state.project.projects
-    ,
+    projects: state.project.projects,
     loading: state.loading,
   };
 };
