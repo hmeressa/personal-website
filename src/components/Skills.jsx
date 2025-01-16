@@ -59,19 +59,8 @@ const Skills = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My Skills</p>
-        <h2 className={styles.sectionHeadText}>Skills.</h2>
+        <h3 className={styles.sectionHeadText}>Skills</h3>
       </motion.div>
-
-      <div className="w-full flex " id="skills">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          The following skills showcases my skills & expertise.
-        </motion.p>
-      </div>
-
       <div className="flex flex-col md:flex-row md:grid md:grid-cols-3 md:justify-evenly md:items-start gap-4 md:gap-8 mt-8">
         <Skill
           title={"Backend Skills"}

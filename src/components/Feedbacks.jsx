@@ -61,7 +61,7 @@ const Feedbacks = ({
       <div
         className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
       >
-        {/* <motion.div variants={textVariant()}>
+        <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>My Projects</p>
           <h2 className={styles.sectionHeadText}>Projects.</h2>
         </motion.div>
@@ -76,7 +76,7 @@ const Feedbacks = ({
             ability to solve complex problems, work with different technologies,
             and manage projects effectively.
           </motion.p>
-        </div> */}
+        </div>
       </div>
       {/* <div
         className={`${styles.paddingX} -mt-20 pb-14 grid-flow-row  px-8 md:flex md:flex-cols-4 overflow-x-scroll md:px-12 py-4 gap-7`}

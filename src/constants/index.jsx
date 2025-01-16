@@ -293,23 +293,6 @@ const experiences = [
   },
   {
     title: "Full Stack Web Developer",
-    company_name: "International Clinical Labratory | Ethiopia.",
-    icon: ICL,
-    iconBg: "#383E56",
-    date: `Februray 2023 -  December 2023`,
-    position: "Full Stack Web Developer",
-    technology: "Java | Spring Boot | Laravel | React | MySQL | JDBC | Docker | Jenkins | CI/CD",
-    address: "Bulgaria | Addis Abeba, Ethiopia ",
-    overview: (
-      <div className="mt-5 list-disc ml-5 space-y-2 text-justify">
-        <p><strong>Developing SaaS Products:</strong> Creating scalable and highly functional software as a service (SaaS) applications.</p>
-        <p><strong>Cross-functional Collaboration:</strong> Working closely with designers, product managers, and other developers to deliver high-quality products.</p>
-        <p><strong>Code Reviews:</strong> Participating in code reviews and providing constructive feedback to enhance code quality.</p>
-      </div>
-    )
-  },
-  {
-    title: "Full Stack Web Developer",
     company_name: "Kerod Apps | Ethiopia",
     icon: endebete,
     iconBg: "#E6DEDD",

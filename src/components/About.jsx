@@ -39,8 +39,7 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h3 className={styles.sectionHeadText}>Overview</h3>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
@@ -49,7 +48,7 @@ const About = () => {
         I'm a skilled software developer with experience in <b>Java</b>, <b>JavaScript</b>, and <b>PHP</b>, specializing in frameworks and libraries such as <b>Spring Boot</b>, <b>Node.js</b>, <b>Express.js</b>, <b>NestJS</b>, <b>ReactJS</b>, and <b>Vue.js</b>. I also have expertise in PHP frameworks like <b>Laravel</b>, <b>Symfony</b>, <b>Yii2</b>, <b>CodeIgniter</b>, and the templating engine <b>Twig</b>. Additionally, I am proficient in databases such as <b>PostgreSQL</b>, <b>MySQL</b>, and <b>MongoDB</b>, along with <b>AWS</b> and <b>DevOps</b> practices. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-5">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
