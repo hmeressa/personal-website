@@ -17,7 +17,6 @@ const StarWrapper = (Component, idName) =>
         <span className='hash-span'>
           &nbsp;
         </span>
-
         <Component />
       </motion.section>
     );

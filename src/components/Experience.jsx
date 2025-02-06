@@ -1,19 +1,17 @@
 import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences } from "../constants";
+import { experiences } from "../constants/experience";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { motion } from "framer-motion";
 
 const ExperienceCard = ({ experience }) => {
   return (
+    <>
     <VerticalTimelineElement
       contentStyle={{
         background: "#1d1836",
@@ -62,17 +60,18 @@ const ExperienceCard = ({ experience }) => {
       <div className="mt-5 list-disc ml-5 space-y-2 text-justify">
         {experience.overview}
       </div>
-    </VerticalTimelineElement>
+      </VerticalTimelineElement>
+       </>
   );
 };
 
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
+      <motion variants={textVariant() } >
+        <h1>What I have done so far</h1>
         <h2 className={styles.sectionHeadText}>Work Experience.</h2>
-      </motion.div>
+      </motion>
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
@@ -85,4 +84,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "Experience");

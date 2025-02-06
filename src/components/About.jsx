@@ -3,7 +3,7 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
+import { services } from "../constants/services";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -39,7 +39,7 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h3 className={styles.sectionHeadText}>Overview</h3>
+        <h3 className={styles.sectionHeadText}>About</h3>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}

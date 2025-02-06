@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { projects, testimonials } from "../constants";
-import { ProjectCard } from "./Works";
 import { connect } from "react-redux";
 import { useEffect } from "react";
 import { fetchProjects } from "../store/project/projectAction";

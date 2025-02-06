@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
-import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
-import { Avatar, Menu } from "antd";
+import { navLinks } from "../constants/nav-link";
+import { menu, close } from "../../public/assets";
+import { Menu } from "antd";
 import avatarlogo from "/log1.svg";
-import { Icosahedron } from "@react-three/drei";
 import SubMenu from "antd/es/menu/SubMenu";
 
 const Navbar = ({ project }) => {
